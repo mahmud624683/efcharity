@@ -1,0 +1,267 @@
+body {
+	font-size: 16px;
+	color: #FFF;
+	background-color: lightblue;
+	font-family: sans-serif,'Oxygen';
+	/*background-image: url("536563.jpg");*/
+}
+/**Header**/
+#header-nav {
+	background-color: #696969;
+	border-radius: 20px;
+	border-bottom: 5px;
+	border-color: red;
+	padding-bottom: 20px;
+}
+#logo-img{
+	background: url("logo.jpg");
+	background-position: center center; 
+	width: 150px;
+	height: 149px;
+	margin: 10px 10px 10px 10px;
+	border-radius: 20px;
+	border: 10px;
+}
+
+.navbar-brand {
+  padding-top: 25px;
+}
+
+.navbar-brand h1 { /* Restaurant name */
+    color: #006400;
+	font-family: Pacifico;
+	font-size: 1.3em;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #222;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+.navbar-brand p { /* Kosher cert */
+    color: 	#FF0000;
+}
+#collapsable-nav{
+	margin-left: 3vw;
+	
+}
+
+#nav-list {
+  margin-top: 10px;
+  background-color: #F5F5DC;
+  border-radius: 10px;
+  border: 5px;
+  margin-bottom: 10px;
+
+}
+#nav-list a {
+  color: #000000;
+  text-align: center;
+  font-size: 1.5em;
+  
+}
+#nav-list li:nth-child(odd) {
+  background-color: #FAEBD7;
+  border-radius: 10px;
+	border: 5px;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+}
+/* END HEADER */
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+	
+	#creator{
+	text-align:right;
+	}
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1em;
+  }
+  
+	#creator{
+	text-align:right;
+	}
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+	#collapsable-nav a { /* Collapsed nav menu text*/ 
+     font-size: 1.2vw;
+  }
+  
+	.navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-left: 15px;
+  }
+  .navbar-brand p { /* Kosher cert */
+    padding-left: 15px;
+  }
+  
+	#creator{
+	text-align:right;
+	}
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  .navbar-brand p { /* Kosher cert */
+    font-size: 3vw;
+    margin-top: 12px;
+  }
+  
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  
+  #xs-deliver {
+    margin-top: 5px;
+    font-size: .7em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  /* End Header */
+  #creator{
+	text-align:center;
+	}
+
+}
+.panel-footer {
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #222;
+  border-top: 0;
+}
+#creator{
+	font-size: 0.5em;
+	color: lightblue;
+}
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.1s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: red;
+  font-family: 'Geostar Fill', cursive;
+  background: green;
+  font-size: 25px;
+  font-weight: bolder;
+  padding: 2px 2px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  opacity: .5;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 4s;
+  animation-name: fade;
+  animation-duration: 4s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .9} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .9} 
+  to {opacity: 1}
+}
+/*Slider ends here
