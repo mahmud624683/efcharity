@@ -80,7 +80,8 @@ body {
 @media (min-width: 1200px) {
 	#collapsable-nav
   {
-    margin-left: 2.5vw;
+    margin-left: 3.5vw;
+    margin-right: 3.5vw;
   }
 	#creator{
 	text-align:right;
@@ -97,6 +98,7 @@ body {
   #collapsable-nav
   {
     margin-left: 5vw;
+    margin-right: 2vw;
   }
 	#creator{
 	text-align:right;
@@ -275,3 +277,16 @@ body {
   to {opacity: 1}
 }
 /*Slider ends here
+
+/*notice board*/
+#notice {
+  background-color: white;
+  color: #000000;
+  font-family: 'Geostar Fill', cursive;
+  text-align: center;
+  padding: 10px;
+  border: 5px solid black;
+  height: 500px;
+  margin-top: 20px;
+  overflow: auto;
+}
