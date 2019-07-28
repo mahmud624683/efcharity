@@ -65,6 +65,7 @@ body {
   border-radius: 10px;
 	border: 5px;
 }
+
 #nav-list a:hover {
   background: #E7E7E7;
 }
@@ -74,18 +75,49 @@ body {
 .navbar-header button.navbar-toggle {
   clear: both;
 }
+.list-group-item{
+  background-color: #FAEBD7;
+}
+
+#menupos1 a:nth-child(odd)
+{
+  background-color: #FAEBEE;
+}
+#menupos1 a:nth-child(even)
+{
+  background-color: #FAEBFE;
+}
+   .pos-absolute {
+        position: absolute;
+        border-left: 2px solid #87a237;
+        z-index: 999;
+        
+    }
+
 /* END HEADER */
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
 	#collapsable-nav
   {
-    margin-left: 3.5vw;
-    margin-right: 3.5vw;
+    margin-left: 4vw;
+    margin-right: 2vw;
+    width: 99vw
+    position:fixed;
+  }
+  #projects{
+  margin-bottom: -10px;
   }
 	#creator{
 	text-align:right;
 	}
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.4em;
+  }
+  .pos-absolute {
+        margin-top: -5px;
+        width: 300px;
+    }
 
 }
 
@@ -97,12 +129,18 @@ body {
   }
   #collapsable-nav
   {
-    margin-left: 5vw;
-    margin-right: 2vw;
+    margin-left: 3.5vw;
+    margin-right: 3.5vw;
   }
 	#creator{
 	text-align:right;
 	}
+  #projects{
+      margin-bottom: 5px;
+  }
+  .pos-absolute {
+        margin-top: 5px;
+    }
 }
 
 /********** Small devices only **********/
@@ -129,6 +167,12 @@ body {
 	#creator{
 	text-align:right;
 	}
+  #projects{
+      margin-bottom: 10px;
+  }
+  .pos-absolute {
+        margin-top: 12px;
+    }
 }
 
 /********** Extra small devices only **********/
@@ -179,6 +223,16 @@ body {
 
 
 * {box-sizing:border-box}
+
+
+
+
+
+
+
+
+
+
 
 /* Slideshow container */
 .slideshow-container {
@@ -290,3 +344,7 @@ body {
   margin-top: 20px;
   overflow: auto;
 }
+
+
+
+
