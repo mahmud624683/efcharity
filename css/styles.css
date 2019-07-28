@@ -67,7 +67,7 @@ body {
 }
 
 #nav-list a:hover {
-  background: #E7E7E7;
+  background: lightblue;
 }
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
   border: 1px solid #61122f;
@@ -82,17 +82,16 @@ body {
 #menupos1 a:nth-child(odd)
 {
   background-color: #FAEBEE;
+  /*font-size: 15px;*/
 }
 #menupos1 a:nth-child(even)
 {
   background-color: #FAEBFE;
+  /*font-size: 15px;*/
 }
-   .pos-absolute {
-        position: absolute;
-        border-left: 2px solid #87a237;
-        z-index: 999;
-        
-    }
+#menupos1 a:hover {
+  background: lightblue;
+}
 
 /* END HEADER */
 
@@ -115,8 +114,12 @@ body {
     font-size: 1.4em;
   }
   .pos-absolute {
-        margin-top: -5px;
-        width: 300px;
+      position: absolute;
+      border-left: 2px solid #87a237;
+      z-index: 999;  
+      margin-top: -5px;
+      width: 300px;
+        
     }
 
 }
@@ -139,7 +142,11 @@ body {
       margin-bottom: 5px;
   }
   .pos-absolute {
+        position: absolute;
+        border-left: 2px solid #87a237;
+        z-index: 999; 
         margin-top: 5px;
+        width: 300px;
     }
 }
 
@@ -171,7 +178,11 @@ body {
       margin-bottom: 10px;
   }
   .pos-absolute {
+        position: absolute;
+        border-left: 2px solid #87a237;
+        z-index: 999; 
         margin-top: 12px;
+        width: 150px;
     }
 }
 
@@ -222,16 +233,16 @@ body {
 }
 
 
+
+
+
+
+
+
+
+
+
 * {box-sizing:border-box}
-
-
-
-
-
-
-
-
-
 
 
 /* Slideshow container */
@@ -344,6 +355,9 @@ body {
   margin-top: 20px;
   overflow: auto;
 }
+
+
+
 
 
 
