@@ -79,6 +79,7 @@ body {
 }
 .navbar-header button.navbar-toggle {
   clear: both;
+  text-decoration:none;
 }
 .list-group-item{
   background-color: #FAEBD7;
@@ -214,7 +215,7 @@ body {
 }
 
 /********** Extra small devices only **********/
-@media (max-width: 767px) {
+@media (min-width: 500px) and(max-width: 767px) {
   /* Header */
   .navbar-brand {
     padding-top: 10px;
@@ -251,6 +252,49 @@ body {
   button.navbar-toggle {
   margin-top: -35px;
   margin-bottom: 15px;
+}
+#header-nav {
+  margin-top: -20px;
+
+}
+
+}
+@media (max-width: 499px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 4vw; /* 1vw = 1% of viewport width */
+  }
+  .navbar-brand p { /* Kosher cert */
+    font-size: 3vw;
+    margin-top: 12px;
+  }
+  
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+    margin-top: -10px; 
+  }
+  
+  #xs-deliver {
+    margin-top: 5px;
+    font-size: .7em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  /* End Header */
+  #creator{
+  text-align:center;
+  }
+#projects{
+  margin-bottom: -5px;
+  }
+  button.navbar-toggle {
+  margin-top: -35px;
 }
 #header-nav {
   margin-top: -20px;
