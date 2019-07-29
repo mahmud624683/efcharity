@@ -22,7 +22,9 @@ body {
   border-radius: 20px;
   border: 10px;
 }
-
+#slogan{
+  color: white;
+}
 .navbar-brand {
   padding-top: 25px;
 }
