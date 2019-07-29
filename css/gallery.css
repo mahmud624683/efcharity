@@ -1,26 +1,26 @@
 body {
-    font-size: 16px;
-    color: #FFF;
-    background-color: lightblue;
-    font-family: sans-serif,'Oxygen';
-    /*background-image: url("536563.jpg");*/
+  font-size: 16px;
+  color: #FFF;
+  background-color: #33A5FF;
+  font-family: sans-serif,'Oxygen';
+  /*background-image: url("536563.jpg");*/
 }
 /**Header**/
 #header-nav {
-    background-color: #696969;
-    border-radius: 20px;
-    border-bottom: 5px;
-    border-color: red;
-    /*padding-bottom: 20px;*/
+  background-color: #040A62;
+  border-radius: 20px;
+  border-bottom: 5px;
+  border-color: red;
+  padding-bottom: 20px;
 }
 #logo-img{
-    background: url("logo.jpg");
-    background-position: center center; 
-    width: 150px;
-    height: 149px;
-    margin: 10px 10px 10px 10px;
-    border-radius: 20px;
-    border: 10px;
+  background: url("logo.jpg");
+  background-position: center center; 
+  width: 150px;
+  height: 149px;
+  margin: 10px 10px 10px 10px;
+  border-radius: 20px;
+  border: 10px;
 }
 
 .navbar-brand {
@@ -28,12 +28,12 @@ body {
 }
 
 .navbar-brand h1 { /* Restaurant name */
-  color: #006400;
-    font-family: Pacifico;
-    font-size: 1.3em;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-shadow: 1px 1px 1px #222;
+    color: #006400;
+  font-family: Pacifico;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
 }
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
@@ -41,9 +41,18 @@ body {
 .navbar-brand p { /* Kosher cert */
     color:  #FF0000;
 }
+#collapsable-nav{
+  margin-top: -20px;
+  
+}
 
 #nav-list {
-  margin-top: 10px;
+  
+  background-color: #F5F5DC;
+  border-radius: 10px;
+  border: 5px;
+  margin-bottom: 10px;
+
 }
 #nav-list a {
   color: #000000;
@@ -51,26 +60,92 @@ body {
   font-size: 1.5em;
   
 }
-/*#nav-list li:nth-child(odd) {
-  background-color: lightblue;
+#nav-list li:nth-child(odd) {
+  background-color: #FAEBD7;
   border-radius: 10px;
-    border: 5px;
-}*/
+  border: 5px;
+ 
+}
+#nav-list li{ 
+  padding-top: 5px;
+}
 #nav-list a:hover {
-  background: #E7E7E7;
+  background: #33A5FF;
 }
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid #61122f;
+  border: 1px solid white;
 }
 .navbar-header button.navbar-toggle {
   clear: both;
 }
+.list-group-item{
+  background-color: #FAEBD7;
+}
+#Library{
+   background-color: #F5F5DC;
+}
+
+#menupos1 a:nth-child(odd)
+{
+  background-color: #FAEBEE;
+  /*font-size: 15px;*/
+}
+#menupos1 a:nth-child(even)
+{
+  background-color: #FAEBFE;
+  /*font-size: 15px;*/
+}
+#menupos1 a:hover {
+  background: #33A5FF;
+}
+#menupos2 a:nth-child(odd)
+{
+  background-color: #FAEBEE;
+  /*font-size: 15px;*/
+}
+#menupos2 a:nth-child(even)
+{
+  background-color: #FAEBFE;
+  /*font-size: 15px;*/
+}
+#menupos2 a:hover {
+  background: #33A5FF;
+}
+
+#menupos2 a:hover, #menupos2 a:focus {
+  text-decoration: none;
+}
+#menupos1 a:hover, #menupos1 a:focus {
+  text-decoration: none;
+}
+
 /* END HEADER */
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
-    #collapsable-nav{
-        float: left;
+  #collapsable-nav
+  {
+    margin-left: 3vw;
+    margin-right: 1vw;
+    width: 100vw
+    position:fixed;
+  }
+  #projects{
+  margin-bottom: -10px;
+  }
+  #creator{
+  text-align:right;
+  }
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.4em;
+  }
+  .pos-absolute {
+      position: absolute;
+      border-left: 2px solid #87a237;
+      z-index: 999;  
+      margin-top: -5px;
+      width: 300px;
+        
     }
 
 }
@@ -79,20 +154,38 @@ body {
 @media (min-width: 992px) and (max-width: 1199px) {
   
   #collapsable-nav a { /* Collapsed nav menu text */
-    font-size: 1.2em;
+    font-size: 1em;
   }
-  #collapsable-nav{
-        float: left;
+  #collapsable-nav
+  {
+    margin-left: 3.5vw;
+    margin-right: 3.5vw;
+  }
+  #creator{
+  text-align:right;
+  }
+  #projects{
+      margin-bottom: 5px;
+  }
+  .pos-absolute {
+        position: absolute;
+        border-left: 2px solid #87a237;
+        z-index: 999; 
+        margin-top: 5px;
+        width: 300px;
     }
 }
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
-    #collapsable-nav a { /* Collapsed nav menu text */
-     font-size: 1.5vw;
+  #collapsable-nav a { /* Collapsed nav menu text*/ 
+     font-size: 1.2vw;
   }
-  
-    .navbar-brand {
+  #collapsable-nav
+  {
+    margin-left: 3vw;
+  }
+  .navbar-brand {
     padding-top: 10px;
     height: 80px;
 
@@ -103,8 +196,19 @@ body {
   .navbar-brand p { /* Kosher cert */
     padding-left: 15px;
   }
-  #collapsable-nav{
-        float: left;
+  
+  #creator{
+  text-align:right;
+  }
+  #projects{
+      margin-bottom: 10px;
+  }
+  .pos-absolute {
+        position: absolute;
+        border-left: 2px solid #87a237;
+        z-index: 999; 
+        margin-top: 12px;
+        width: 150px;
     }
 }
 
@@ -127,26 +231,95 @@ body {
 
   #collapsable-nav a { /* Collapsed nav menu text */
     font-size: 1.2em;
+    margin-top: -10px; 
   }
-
-  #call-btn > a {
-    font-size: 1.5em;
-    display: block;
-    margin: 0 20px;
-    padding: 10px;
-    border: 2px solid #fff;
-    background-color: #f6b319;
-    color: #951c49;
-  }
+  
   #xs-deliver {
     margin-top: 5px;
     font-size: .7em;
     letter-spacing: .1em;
     text-transform: uppercase;
   }
-  
   /* End Header */
+  #creator{
+  text-align:center;
+  }
+#projects{
+  margin-bottom: -5px;
+  }
+  button.navbar-toggle {
+  margin-top: -35px;
+  margin-bottom: 15px;
+}
+#header-nav {
+  margin-top: -20px;
 
+}
+
+}
+
+
+/*footer*/
+.panel-footer {
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #222;
+  border-top: 0;
+}
+#creator{
+  font-size: 0.5em;
+  color: lightblue;
+}
+
+
+
+/*album*/
+#albumIndex h1{
+  text-align: center;
+  color: black;
+  font-weight: bolder;
+  
+}
+#albumIndex {
+  margin-bottom: 800px;
+}
+#mainlist li:nth-child(odd)
+{
+  background-color: #25383C;
+}
+#mainlist 
+{
+  background-color: #2C3539;
+  text-align: center;
+  list-style-type: none;
+}
+#mainlist a
+{
+  color: white !important;
+}
+
+
+.album{
+   padding: 10px;
+  border: 5px solid black;
+  height: 720px;
+  margin-top: 20px;
+  overflow: auto;
+}
+
+.album {
+  text-align:center;
+}
+
+.album h1 {
+  text-align:center;
+  color: white;
+  background-color: #33A5FF;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  margin-top: -10px;
 }
 
 
