@@ -48,5 +48,9 @@
   margin-top: -30px;
   font-size: 2.5vw;
 }
-
+#backOnTop{
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+}
 
