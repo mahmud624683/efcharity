@@ -1,0 +1,340 @@
+body {
+  font-size: 16px;
+  color: #FFF;
+  background-color: #33A5FF;
+  font-family: sans-serif,'Oxygen';
+  /*background-image: url("536563.jpg");*/
+}
+/**Header**/
+#header-nav {
+  background-color: #040A62;
+  border-radius: 20px;
+  border-bottom: 5px;
+  border-color: red;
+  padding-bottom: 20px;
+}
+#logo-img{
+  background: url("logo.jpg");
+  background-position: center center; 
+  width: 150px;
+  height: 149px;
+  margin: 10px 10px 10px 10px;
+  border-radius: 20px;
+  border: 10px;
+}
+#slogan{
+  color: white;
+}
+.navbar-brand {
+  padding-top: 25px;
+}
+
+.navbar-brand h1 { /* Restaurant name */
+    color: #006400;
+  font-family: Pacifico;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+.navbar-brand p { /* Kosher cert */
+    color:  #FF0000;
+}
+#collapsable-nav{
+  margin-top: -20px;
+  
+}
+
+#nav-list {
+  
+  background-color: #F5F5DC;
+  border-radius: 10px;
+  border: 5px;
+  margin-bottom: 10px;
+
+}
+#nav-list a {
+  color: #000000;
+  text-align: center;
+  font-size: 1.5em;
+  
+}
+#nav-list li:nth-child(odd) {
+  background-color: #FAEBD7;
+  border-radius: 10px;
+  border: 5px;
+ 
+}
+#nav-list li{ 
+  padding-top: 5px;
+}
+#nav-list a:hover {
+  background: #33A5FF;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid white;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+}
+.list-group-item{
+  background-color: #FAEBD7;
+}
+#Library{
+   background-color: #F5F5DC;
+}
+
+#menupos1 a:nth-child(odd)
+{
+  background-color: #FAEBEE;
+  /*font-size: 15px;*/
+}
+#menupos1 a:nth-child(even)
+{
+  background-color: #FAEBFE;
+  /*font-size: 15px;*/
+}
+#menupos1 a:hover {
+  background: #33A5FF;
+}
+#menupos2 a:nth-child(odd)
+{
+  background-color: #FAEBEE;
+  /*font-size: 15px;*/
+}
+#menupos2 a:nth-child(even)
+{
+  background-color: #FAEBFE;
+  /*font-size: 15px;*/
+}
+#menupos2 a:hover {
+  background: #33A5FF;
+}
+
+#menupos2 a:hover, #menupos2 a:focus {
+  text-decoration: none;
+}
+#menupos1 a:hover, #menupos1 a:focus {
+  text-decoration: none;
+}
+
+/* END HEADER */
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  #collapsable-nav
+  {
+    max-width: 1020px;
+    position: relative;
+    margin: auto;
+  }
+  #projects{
+  margin-bottom: -10px;
+  }
+  #creator{
+  text-align:right;
+  }
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.4em;
+  }
+  .pos-absolute {
+    position: absolute;
+    border-left: 2px solid #87a237;
+    z-index: 999;  
+    margin-top: -5px;
+    width: 300px;
+        
+  }
+  .panel-footer {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    bottom: 0;
+  }
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1em;
+  }
+  #collapsable-nav
+  {
+    margin-left: 3.5vw;
+    margin-right: 3.5vw;
+  }
+  #creator{
+  text-align:right;
+  }
+  #projects{
+    margin-bottom: 5px;
+  }
+  .pos-absolute {
+    position: absolute;
+    border-left: 2px solid #87a237;
+    z-index: 999; 
+    margin-top: 5px;
+    width: 300px;
+  }
+  .panel-footer {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    bottom: 0;
+  }
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  #collapsable-nav a { /* Collapsed nav menu text*/ 
+     font-size: 1.2vw;
+  }
+  #collapsable-nav
+  {
+    margin-left: 3vw;
+  }
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-left: 15px;
+  }
+  .navbar-brand p { /* Kosher cert */
+    padding-left: 15px;
+  }
+  
+  #creator{
+  text-align:right;
+  }
+  #projects{
+      margin-bottom: 10px;
+  }
+  .pos-absolute {
+      position: absolute;
+      border-left: 2px solid #87a237;
+      z-index: 999; 
+      margin-top: 12px;
+      width: 150px;
+    }
+  .panel-footer {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    bottom: 0;
+  }
+}
+
+/********** Extra small devices only **********/
+@media (min-width: 500px) and(max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  .navbar-brand p { /* Kosher cert */
+    font-size: 3vw;
+    margin-top: 12px;
+  }
+  
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+    margin-top: -10px; 
+  }
+  
+  #xs-deliver {
+    margin-top: 5px;
+    font-size: .7em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  /* End Header */
+  #creator{
+  text-align:center;
+  }
+#projects{
+  margin-bottom: -5px;
+  }
+  button.navbar-toggle {
+  margin-top: -35px;
+  margin-bottom: 15px;
+}
+#header-nav {
+  margin-top: -20px;
+
+}
+
+}
+@media (max-width: 499px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 4vw; /* 1vw = 1% of viewport width */
+  }
+  .navbar-brand p { /* Kosher cert */
+    font-size: 3vw;
+    margin-top: 12px;
+  }
+  
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+    margin-top: -10px; 
+  }
+  
+  #xs-deliver {
+    margin-top: 5px;
+    font-size: .7em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  /* End Header */
+  #creator{
+  text-align:center;
+  }
+#projects{
+  margin-bottom: -5px;
+  }
+  button.navbar-toggle {
+  margin-top: -65px;
+}
+#main-title {
+  margin-top: -10px;
+}
+#header-nav{
+  margin-bottom: 0px !important;
+  padding-bottom: 0px !important;
+}
+#collapsable-nav  { /* Collapsed nav menu text */
+    margin-top: -5px !important;
+    margin-bottom: -10px !important;
+  }
+}
+
+
+
+/*footer*/
+.panel-footer {
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  background-color: #222;
+}
+#creator{
+  font-size: 0.5em;
+  color: lightblue;
+}
+
+
