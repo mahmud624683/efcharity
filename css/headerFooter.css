@@ -60,12 +60,14 @@ body {
   color: #000000;
   text-align: center;
   font-size: 1.5em;
+  padding-bottom: -10px;
   
 }
 #nav-list li:nth-child(odd) {
   background-color: #FAEBD7;
   border-radius: 10px;
-  border: 5px;
+  padding-top: 10px;
+  /*border: 5px;*/
  
 }
 #nav-list li{ 
@@ -83,9 +85,6 @@ body {
 .list-group-item{
   background-color: #FAEBD7;
 }
-#Library{
-   background-color: #F5F5DC;
-}
 
 #menupos1 a:nth-child(odd)
 {
@@ -100,26 +99,10 @@ body {
 #menupos1 a:hover {
   background: #33A5FF;
 }
-#menupos2 a:nth-child(odd)
-{
-  background-color: #FAEBEE;
-  /*font-size: 15px;*/
-}
-#menupos2 a:nth-child(even)
-{
-  background-color: #FAEBFE;
-  /*font-size: 15px;*/
-}
-#menupos2 a:hover {
-  background: #33A5FF;
-}
-
-#menupos2 a:hover, #menupos2 a:focus {
-  text-decoration: none;
-}
 #menupos1 a:hover, #menupos1 a:focus {
   text-decoration: none;
 }
+
 
 /* END HEADER */
 
@@ -127,12 +110,9 @@ body {
 @media (min-width: 1200px) {
   #collapsable-nav
   {
-    max-width: 1020px;
+    max-width: 700px;
     position: relative;
     margin: auto;
-  }
-  #projects{
-  margin-bottom: -10px;
   }
   #creator{
   text-align:right;
@@ -164,8 +144,9 @@ body {
   }
   #collapsable-nav
   {
-    margin-left: 3.5vw;
-    margin-right: 3.5vw;
+    max-width: 550px;
+    position: relative;
+    margin: auto;
   }
   #creator{
   text-align:right;
@@ -194,7 +175,9 @@ body {
   }
   #collapsable-nav
   {
-    margin-left: 3vw;
+    max-width: 447px;
+    position: relative;
+    margin: auto;
   }
   .navbar-brand {
     padding-top: 10px;
@@ -229,6 +212,15 @@ body {
 }
 
 /********** Extra small devices only **********/
+@media (max-width: 767px) {
+#header-nav{
+  margin-bottom: 0px !important;
+}
+#collapsable-nav  { /* Collapsed nav menu text */
+    margin-top: -10px !important;
+    margin-bottom: -10px !important;
+  }
+  }
 @media (min-width: 500px) and(max-width: 767px) {
   /* Header */
   .navbar-brand {
@@ -260,18 +252,11 @@ body {
   #creator{
   text-align:center;
   }
-#projects{
-  margin-bottom: -5px;
-  }
+
   button.navbar-toggle {
   margin-top: -35px;
   margin-bottom: 15px;
 }
-#header-nav {
-  margin-top: -20px;
-
-}
-
 }
 @media (max-width: 499px) {
   /* Header */
@@ -305,7 +290,7 @@ body {
   text-align:center;
   }
 #projects{
-  margin-bottom: -5px;
+   margin-top: -10px;
   }
   button.navbar-toggle {
   margin-top: -65px;
@@ -314,13 +299,8 @@ body {
   margin-top: -10px;
 }
 #header-nav{
-  margin-bottom: 0px !important;
   padding-bottom: 0px !important;
 }
-#collapsable-nav  { /* Collapsed nav menu text */
-    margin-top: -5px !important;
-    margin-bottom: -10px !important;
-  }
 }
 
 
