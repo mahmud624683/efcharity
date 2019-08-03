@@ -1,7 +1,7 @@
 var slideIndex = 0;
 showSlides();
 
-/*function plusSlides(n) {
+function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 function currentSlide(n) {
@@ -22,7 +22,7 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block"; 
   dots[slideIndex-1].className += " active";
-}*/
+}
 
 function showSlides() {
   var i;
