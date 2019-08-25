@@ -1,5 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["bDLyD"]); }
-
-__d("PagesAboutSectionLogger",["Event","PagesEventObserver","Run"],(function(a,b,c,d,e,f){"use strict";a={registerLogEvent:function(a,c,d){var e=b("Event").listen(a,"click",function(){return b("PagesEventObserver").notify(c,d)});b("Run").onLeave(function(){e.remove()})}};e.exports=a}),null);
-__d("PagesPageWebsiteClickFalcoEvent",["FalcoLoggerInternal"],(function(a,b,c,d,e,f){"use strict";a=b("FalcoLoggerInternal").create("pages_page_website_click");e.exports=a}),null);
-__d("TBLPagesPageWebsiteClickFalcoEventWrapper",["PagesPageWebsiteClickFalcoEvent"],(function(a,b,c,d,e,f){__p&&__p();a=function(){"use strict";__p&&__p();function a(){}a.log=function(a){b("PagesPageWebsiteClickFalcoEvent").log(function(){return a.data})};a.registerLogOnClick=function(a){a.element.addEventListener("click",function(){b("PagesPageWebsiteClickFalcoEvent").log(function(){return a.data})})};return a}();e.exports=a}),null);

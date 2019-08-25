@@ -29,7 +29,7 @@ body {
   padding-top: 25px;
 }
 
-.navbar-brand h1 { /* Restaurant name */
+.navbar-brand h1 { 
     color: #006400;
   font-family: Pacifico;
   font-size: 1.3em;
@@ -40,7 +40,7 @@ body {
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
 }
-.navbar-brand p { /* Kosher cert */
+.navbar-brand p {
     color:  #FF0000;
 }
 #collapsable-nav{
