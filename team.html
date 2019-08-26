@@ -102,8 +102,16 @@
       <div class="column nature">
         <div class="content">
           <img src="css/story.jpg" alt="MD Lutfor Rahman" style="width:100%">
-          <h4>MD Lutfor Rahman</h4>
-          <p>Co-founder Education Foundation</p>
+          <div class="popup" onclick="myFunction()"><h4>MD Lutfor Rahman</h4><p>Co-founder Education Foundation</p>
+            <span class="popuptext" id="myPopup">A Simple Popup!</span>
+          </div>
+          <script>
+              // When the user clicks on div, open the popup
+              function myFunction() {
+                var popup = document.getElementById("myPopup");
+                popup.classList.toggle("show");
+              }
+          </script>
         </div>
       </div>
       <div class="column nature">
