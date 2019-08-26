@@ -114,11 +114,6 @@
   opacity: 1;
 }
 
-img:hover {
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
-}
-
 
 
 a {
@@ -232,8 +227,15 @@ p {
   font-family: 'Play', sans-serif;
   font-size: 1.5vw;
 }
+img:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
 
 }
+
+
+
 @media (max-width: 767px)
 {
     .popup{
@@ -260,5 +262,9 @@ p {
   transition: .5s;
   font-family: 'Play', sans-serif;
   font-size: 3vw;
+}
+img:hover {
+  -webkit-transform: scale(1.02);
+  transform: scale(1.02);
 }
 }
