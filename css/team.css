@@ -10,12 +10,6 @@
   margin: auto;
 }
 
-h1 {
-  font-size: 50px;
-  word-break: break-all;
-  text-align: center;
-  margin-bottom: 20px;
-}
 
 .row {
   margin: 8px -16px;
@@ -98,19 +92,7 @@ h1 {
   list-style: none;
   margin-bottom: -30px;
 }
-#localList li a
-{
-  position: relative;
-  display: block;
-  padding: 10px 20px;
-  margin: 20px 0px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #262626;
-  transition: .5s;
-  font-family: 'Play', sans-serif;
-  font-size: 1.5vw;
-}
+
 
 #localList li a:before
 {
@@ -137,60 +119,7 @@ img:hover {
   transform: scale(1.05);
 }
 
-/*pop Up*/
-/* 
-.popup {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
 
-.popup .popuptext {
-  visibility: hidden;
-  width: 160px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 8px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -80px;
-}
-
-.popup .popuptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}
-
-
-.popup .show {
-  visibility: visible;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s;
-}
-
-@-webkit-keyframes fadeIn {
-  from {opacity: 0;} 
-  to {opacity: 1;}
-}
-
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity:1 ;}
-}*/
 
 a {
   text-decoration: none;
@@ -284,12 +213,52 @@ p {
     margin-top: 20px;
     overflow: auto
   }
+  h1 {
+  font-size: 50px;
+  word-break: break-all;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#localList li a
+{
+  position: relative;
+  display: block;
+  padding: 10px 20px;
+  margin: 20px 0px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #262626;
+  transition: .5s;
+  font-family: 'Play', sans-serif;
+  font-size: 1.5vw;
+}
+
 }
 @media (max-width: 767px)
 {
     .popup{
+    width: 90vw; 
     height: 540px;
     margin-top: 20px;
     overflow: auto
   }
+  h1 {
+  font-size: 40px;
+  word-break: break-all;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#localList li a
+{
+  position: relative;
+  display: block;
+  padding: 2vw 2vw;
+  margin: 20px 0px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #262626;
+  transition: .5s;
+  font-family: 'Play', sans-serif;
+  font-size: 3vw;
+}
 }
