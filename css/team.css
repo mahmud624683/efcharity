@@ -1,14 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
-
-
-/* Center website */
-.main {
-  max-width: 1000px;
-  margin: auto;
-}
 
 
 .row {
@@ -41,36 +30,6 @@
   display: block;
 }
 
-/* Style the buttons */
-.btn {
-  border: none;
-  outline: none;
-  padding-left: 1vw;
-  padding-right: 1vw;
-  background-color: transparent;
-  cursor: pointer;
-  color: black;
-  font-family: 'Play', sans-serif;
-  font-size: 1.5vw;
-}
-#buttonCover
-{
-  max-width: 21vw;
-  position: relative;
-  margin: auto;
-}
-/* Add a grey background color on mouse-over */
-.btn:hover {
-  background-color: #ddd;
-}
-
-#myBtnContainer
-{
-  border-bottom-style: solid;
-  border-bottom-color: #ddd;
-  border-bottom-width: 1px;
-  margin-left: 52px;
-}
 
 
 
@@ -331,4 +290,12 @@ img:hover {
 #Members ,#Committee,#Volunteers,#PastMembers,#Donors{
   display: none;
   margin-top: 100px;
+}
+#footerRow{
+  margin: -10px !important;
+
+}
+.columns {
+  float: left !important;
+  width: 33.33% !important;
 }
