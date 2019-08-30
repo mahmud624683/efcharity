@@ -195,7 +195,50 @@ p {
 
 
 /* Add a dark background color to the active button */
-@media (min-width: 767px)
+@media (min-width: 1200px )
+{
+  .column {
+    float: left;
+    width: 25%;
+  }
+  .popup{
+    max-width: 500px;
+    height: 720px;
+    margin-top: 20px;
+    overflow: auto
+  }
+  h1 {
+  font-size: 50px;
+  word-break: break-all;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#localList li a
+{
+  position: relative;
+  display: block;
+  padding: 10px 20px;
+  margin: 20px 0px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #262626;
+  transition: .5s;
+  font-family: 'Play', sans-serif;
+  font-size: 1.5vw;
+}
+img:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+  .content h4 {
+  font-size: 1.2vw;
+}
+  .content p {
+    font-size: 0.8vw;
+  }
+}
+
+@media (min-width: 767px )and (max-width: 1199px)
 {
     /* Create three equal columns that floats next to each other */
   .column {
@@ -230,6 +273,12 @@ p {
 img:hover {
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
+}
+.content h4 {
+  font-size: 1.2vw;
+}
+.content p {
+  font-size: 1vw;
 }
 
 }
@@ -267,4 +316,15 @@ img:hover {
   -webkit-transform: scale(1.02);
   transform: scale(1.02);
 }
+}
+.content h4,p,h2 {
+  text-align: center;
+}
+
+#Founders{
+  display: block;
+}
+#Members ,#Committee,#Volunteers,#PastMembers,#Donors{
+  display: none;
+  margin-top: 100px;
 }

@@ -114,9 +114,6 @@ body {
     position: relative;
     margin: auto;
   }
-  #creator{
-  text-align:right;
-  }
   #collapsable-nav a { /* Collapsed nav menu text */
     font-size: 1.4em;
   }
@@ -147,9 +144,6 @@ body {
     max-width: 550px;
     position: relative;
     margin: auto;
-  }
-  #creator{
-  text-align:right;
   }
   #projects{
     margin-bottom: 5px;
@@ -191,9 +185,6 @@ body {
     padding-left: 15px;
   }
   
-  #creator{
-  text-align:right;
-  }
   #projects{
       margin-bottom: 10px;
   }
@@ -305,6 +296,42 @@ body {
 
 
 
+/*binary segementation*/
+@media (min-width: 768px)
+{
+  .column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#counter{
+  float: right;
+}
+.panel-footer{
+  margin-top: 100px !important;  
+}
+}
+
+
+@media (max-width: 767px)
+{
+  #counter {
+    max-width: 110px;
+    position: relative;
+    margin: auto;
+    
+}
+.column h4 {
+  text-align: center;
+}
+}
+
 /*footer*/
 .panel-footer {
   margin-top: 10px;
@@ -315,6 +342,7 @@ body {
 #creator{
   font-size: 0.5em;
   color: lightblue;
+  text-align:center;
 }
 
 
