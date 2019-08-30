@@ -92,12 +92,12 @@
       </div>
     </div>-->
     <ul id="localList">
-      <li><a href="#" onclick='newwin1()'>Founders</a></li>
-      <li><a href="#" onclick='newwin2()'>Members</a></li>
-      <li><a href="#" onclick='newwin3()'>Committee</a></li>
-      <li><a href="#" onclick='newwin4()'>Volunteers</a></li>
-      <li><a href="#" onclick='newwin5()'>Past&nbsp;Members</a></li>
-      <li><a href="#" onclick='newwin6()'>Donors</a></li>
+      <li><a href="#" onclick='newwin1()' class="subItem active">Founders</a></li>
+      <li><a href="#" onclick='newwin2()' class="subItem">Members</a></li>
+      <li><a href="#" onclick='newwin3()' class="subItem">Committee</a></li>
+      <li><a href="#" onclick='newwin4()' class="subItem">Volunteers</a></li>
+      <li><a href="#" onclick='newwin5()' class="subItem">Past&nbsp;Members</a></li>
+      <li><a href="#" onclick='newwin6()' class="subItem">Donors</a></li>
     </ul>
     <!-- Portfolio Gallery Grid -->
     <div class="row" id="Founders">
@@ -283,7 +283,15 @@
     allClear();
     document.getElementById("Donors").style.display="block";
   }
-    
+  var header = document.getElementById("myDIV");
+  var btns = document.getElementsByClassName("subItem");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+    });
+  }
     /*function newwin() {               myWindow=window.open('lead_data.php?leadid=1','myWin','width=400,height=650')
     }*/
     </script>

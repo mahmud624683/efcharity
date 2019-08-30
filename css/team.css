@@ -120,6 +120,10 @@ a {
   text-decoration: none;
   color: #000;
 }
+.active {
+  background-color: #666;
+  color: white;
+}
 p {
   text-align: left;
 }
@@ -310,7 +314,7 @@ img:hover {
   color: #262626;
   transition: .5s;
   font-family: 'Play', sans-serif;
-  font-size: 3vw;
+  font-size: 2vw;
 }
 img:hover {
   -webkit-transform: scale(1.02);
