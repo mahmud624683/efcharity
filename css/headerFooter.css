@@ -31,7 +31,7 @@ body {
 
 .navbar-brand h1 { 
     color: #006400;
-  font-family: Pacifico;
+  /*font-family: Pacifico;*/
   font-size: 1.3em;
   text-transform: uppercase;
   font-weight: bold;
