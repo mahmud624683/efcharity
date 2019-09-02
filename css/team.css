@@ -292,7 +292,7 @@ img:hover {
   margin-top: 100px;
 }
 #footerRow{
-  margin: -10px !important;
+  margin-top: -10px !important;
 
 }
 .columns {
@@ -330,7 +330,13 @@ img:hover {
 {
   margin: 1vw;
 }
-#currentCommittee li
+.CommitteePre ul
 {
-  text-decoration: none;
+  list-style-type: none;
+  padding-right: 10px;
+  padding-left: 10px !important;
+}
+.CommitteePre ul li:nth-child(even)
+{
+  background-color: #73A5FF;
 }

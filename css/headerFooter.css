@@ -6,6 +6,7 @@ body {
   /*background-image: url("536563.jpg");*/
 }
 /**Header**/
+
 #header-nav {
   background-color: #040A62;
   border-radius: 20px;
@@ -15,7 +16,6 @@ body {
 }
 #logo-img{
   background: url("logo.jpg");
-  background-position: center center; 
   width: 150px;
   height: 149px;
   margin: 10px 10px 10px 10px;
@@ -130,6 +130,9 @@ body {
     position: sticky;
     bottom: 0;
   }
+  .navbar-header{
+  transform: translate(70%,0%);
+}
 
 }
 
@@ -159,6 +162,9 @@ body {
     position: -webkit-sticky; /* Safari */
     position: sticky;
     bottom: 0;
+  }
+  .navbar-header{
+  transform: translate(50%,0%);
   }
 }
 
@@ -199,6 +205,9 @@ body {
     position: -webkit-sticky; /* Safari */
     position: sticky;
     bottom: 0;
+  }
+   .navbar-header{
+  transform: translate(50%,0%);
   }
 }
 
@@ -247,8 +256,10 @@ body {
   button.navbar-toggle {
   margin-top: -35px;
   margin-bottom: 15px;
+  }
 }
-}
+
+
 @media (max-width: 499px) {
   /* Header */
   .navbar-brand {
