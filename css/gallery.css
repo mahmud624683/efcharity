@@ -6,17 +6,18 @@
   
 }
 #albumIndex {
-  
+
 }
 #mainlist li:nth-child(odd)
 {
-  background-color: #25383C;
+  background-color: #55383C;
 }
 #mainlist 
 {
   background-color: #2C3539;
   text-align: center;
   list-style-type: none;
+  padding: 20px !important;
 }
 #mainlist a
 {
@@ -24,13 +25,7 @@
 }
 
 
-.album{
-   padding: 10px;
-  border: 5px solid black;
-  height: 720px;
-  margin-top: 20px;
-  overflow: auto;
-}
+
 
 .album {
   text-align:center;
@@ -38,7 +33,7 @@
   padding-top: 0px;
 }
 
-.album h1 {
+.album h2 {
   text-align:center;
   color: black;
   background-color: #33A5FF;
@@ -52,5 +47,46 @@
   position: -webkit-sticky;
   position: sticky;
   bottom: 0;
+}
+
+
+/* The overlay effect - lays on top of the container and over the image */
+.text {
+  bottom: 0; 
+  transform: translate(0%,-100%);
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 30px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.ImgContainer:hover .text {
+  opacity: 1;
+}
+@media (min-width: 768px)
+{
+	.album{
+	  padding: 10px;
+	  border: 5px solid black;
+	  height: 900px;
+	  margin-top: 20px;
+	  overflow: auto;
+}
+}
+
+
+@media (max-width: 767px)
+{
+	.album{
+	  border: 5px solid black;
+	  height: 540px;
+	  margin-top: 20px;
+	  overflow: auto;
 }
 

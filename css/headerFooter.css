@@ -16,8 +16,8 @@ body {
 }
 #logo-img{
   background: url("logo.jpg");
-  width: 150px;
-  height: 149px;
+  width: 191px;
+  height: 150px;
   margin: 10px 10px 10px 10px;
   border-radius: 20px;
   border: 10px;
@@ -108,6 +108,9 @@ body {
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
+  #donation{
+    transform: translate(-50%,300%);
+  }
   #collapsable-nav
   {
     max-width: 700px;
@@ -131,14 +134,16 @@ body {
     bottom: 0;
   }
   .navbar-header{
-  transform: translate(47%,5%);
+  transform: translate(43%,5%);
 }
 
 }
 
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
-  
+  #donation{
+    transform: translate(25%,300%);
+  }
   #collapsable-nav a { /* Collapsed nav menu text */
     font-size: 1em;
   }
@@ -164,12 +169,15 @@ body {
     bottom: 0;
   }
   .navbar-header{
-  transform: translate(41.5%,5%);
+  transform: translate(38%,5%);
   }
 }
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
+  #donation{
+    transform: translate(0%,100%);
+  }
   #collapsable-nav a { /* Collapsed nav menu text*/ 
      font-size: 1.2vw;
   }
@@ -207,22 +215,16 @@ body {
     bottom: 0;
   }
    .navbar-header{
-  transform: translate(50%,0%);
+  transform: translate(42%,0%);
   }
 }
 
 /********** Extra small devices only **********/
-@media (max-width: 767px) {
-#header-nav{
-  margin-bottom: 0px !important;
-}
-#collapsable-nav  { /* Collapsed nav menu text */
-    margin-top: -10px !important;
-    margin-bottom: -10px !important;
-  }
-  }
-@media (min-width: 500px) and(max-width: 767px) {
+@media (min-width: 500px) and (max-width: 767px) {
   /* Header */
+  #donation{
+    transform: translate(0%,50%);
+  }
   .navbar-brand {
     padding-top: 10px;
     height: 80px;
@@ -258,7 +260,16 @@ body {
   margin-bottom: 15px;
   }
 }
-
+@media (max-width: 767px) {
+  
+#header-nav{
+  margin-bottom: 0px !important;
+}
+#collapsable-nav  { /* Collapsed nav menu text */
+    margin-top: -10px !important;
+    margin-bottom: -10px !important;
+  }
+}
 
 @media (max-width: 499px) {
   /* Header */
