@@ -85,8 +85,14 @@
 {
 	.album{
 	  border: 5px solid black;
-	  height: 540px;
+	  height: 400px;
 	  margin-top: 20px;
 	  overflow: auto;
+	}
+	
+	.text{
+		padding: 0px !important;
+		margin-bottom: -40px;
+	}
 }
 
