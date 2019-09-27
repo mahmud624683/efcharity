@@ -9,7 +9,22 @@
     <link rel="stylesheet" href="css/headerFooter.css">
     <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Geostar+Fill&display=swap" rel="stylesheet">
-
+    <style type="text/css">
+        
+           #feedBack fieldset{
+                
+                
+            }
+            #feedBack input{
+              margin-bottom: 20px;
+              color: black;
+            }
+            #feedBack textarea{
+              height: 250px;
+              margin-bottom: 20px;
+              color: black;
+            }
+    </style>
   </head>
 <body>
   <header>
@@ -73,7 +88,7 @@
               About Us <i class="glyphicon glyphicon-chevron-down"></i></span></a>
             </a>
             <div class="dropdown-menu collapse pos-absolute" id="menupos1">
-               <a href="story.html"   class="list-group-item sub-item">Story of EF</a>
+                         <a href="story.html"   class="list-group-item sub-item">Story of EF</a>
                          <a href="team.html"  class="list-group-item sub-item">Team</a>  
                          <a href="contact.html"  class="list-group-item sub-item">Contact Us</a>
                          <a href="BaV.html" class="list-group-item sub-item">Be a volunteer</a> 
@@ -86,6 +101,50 @@
       </div><!-- .collapse .navbar-collapse -->
   </div>
 <!--<BODY></BODY>-->
+<div class="container">
+      <div class="col col-md-10 col-md-offset-1 form-inner" >
+        <div class="col col-md-12">
+          <h3 style="text-align: center;border-bottom-style: solid;border-bottom-color: #ddd;border-bottom-width: 1px; padding-bottom: 5px;">Leave us a message</h3>
+        </div>
+        
+        <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
+            action="https://script.google.com/macros/s/AKfycbzLVYe3GyfEZVoAnlTp7sDxHBInYpG82bEI5Udut1dP1sWFdf2E/exec">
+          <!-- change the form action to your script url -->
+
+          <div class="form-elements" id="feedBack">
+            <div class="col col-md-6">
+            <input type="text" class="form-control" name="name" value="" placeholder="Your Name..">
+            </div>
+            <div class="col col-md-6">
+            <input type="email" class="form-control" required="" name="email" value="" placeholder="Your Email.." aria-required="true">
+            </div>
+            <div class="col col-md-12">
+            <input type="text" class="form-control" required="" name="subject" value="" placeholder="Subject.." aria-required="true">
+            </div>
+            <div class="col col-md-12">
+            <textarea class="form-control" name="message" required="" placeholder="Write Here.." aria-required="true"></textarea>
+            </div>
+            <div class="col col-md-12">
+             <button style="background: black;">Send</button>
+            <!--<span id="loader"><img src="https://bidyanondo.org/site-assets/images/contact-ajax-loader.gif" alt="Loader"></span>-->
+            </div>
+
+
+           
+          </div>
+
+          <!-- Customise the Thankyou Message People See when they submit the form: -->
+          <div class="thankyou_message" style="display:none;">
+            <h2><em>Thanks</em> for contacting us!
+              We will get back to you soon!</h2>
+          </div>
+
+        </form>
+      </div>
+      
+    
+</div>
+
 
 <!--<FOOTER></FOOTER>-->
 <footer class="panel-footer">
@@ -105,9 +164,11 @@
 </div>
   </div>
 </footer>
-  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <!-- jQuery (Bootstrap JS plugins depend on it) <script src="js/form-submission-handler.js"></script>-->
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/form-submission-handler.js"></script>
+  
 </body>
 </html>
