@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/headerFooter.css">
     <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Geostar+Fill&display=swap" rel="stylesheet">
+
     <style type="text/css">
         
            #feedBack fieldset{
@@ -66,6 +67,35 @@
 			  text-decoration: none;
 			  cursor: pointer;
 			}
+
+			.capt{
+				background-color:grey;
+				width: 300px;
+				height:100px;
+				
+			}
+
+			#mainCaptcha{
+				position: relative;
+				left : 60px;
+				top: 5px;
+				
+			}
+
+			#refresh{
+				position:relative;
+				left:230px;
+				width:30px;
+				height:30px;
+				bottom:45px;
+				background-image: url(rpt.jpg);
+			}
+
+			#txtInput, #Button1{
+				position: relative;
+				left:40px;
+				bottom: 40px;
+			}
     </style>
   </head>
 <body>
@@ -96,7 +126,7 @@
             padding: 10px;
             float: right;
             margin-bottom: 15px;
-            ">Donate Here<i class="glyphicon glyphicon-chevron-right"></i></button>  
+            ">Donate Here<i class="glyphicon glyphicon-chevron-right"></i></button>
             </div>      
       </nav>
   </header>
@@ -134,6 +164,7 @@
                          <a href="team.html"  class="list-group-item sub-item">Team</a>  
                          <a href="contact.html"  class="list-group-item sub-item">Contact Us</a>
                          <a href="BaV.html" class="list-group-item sub-item">Be a volunteer</a> 
+                         <a href="donation.html" class="list-group-item sub-item">Donate Us</a>  
             </div>
                   </li>
                   <!--<li>
@@ -193,10 +224,21 @@
             <div class="col col-md-12">
             <textarea class="form-control" name="message" required="" placeholder="Why you want to work with Education Foundation?" aria-required="true"></textarea>
             </div>
+             <!--<div class="col col-md-12" style="margin-bottom: 20px;">
+            	<body onload="Captcha();" > 
+				   <div class="capt"> 
+				   <h2 type="text" id="mainCaptcha"></h2>
+				   <p><input type="button" id="refresh" onclick="Captcha();"/></p>            
+				   <input type="text" id="txtInput"/>    
+				   <input id="Button1" type="button" value="Check" onclick="alert(ValidCaptcha());"/>
+				   </div>
+				</body>
+            </div>-->
+
             <div class="col col-md-12">
            		<input type="checkbox" onclick="checkAddress()" id="checkbox" required="" name="aggriment" value="aggriment" aria-required="false">I have seen all the terms and conditions.I agree with these.<br>
             </div>
-
+           
             <div class="col col-md-12">
              <button style="background: black;">Send</button>
             </div>

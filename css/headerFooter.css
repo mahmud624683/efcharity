@@ -224,6 +224,7 @@ body {
   /* Header */
   #donation{
     transform: translate(0%,50%);
+    display: none;
   }
   .navbar-brand {
     padding-top: 10px;
@@ -272,6 +273,9 @@ body {
 }
 
 @media (max-width: 499px) {
+  #donation{
+    display: none;
+  }
   /* Header */
   .navbar-brand {
     padding-top: 10px;
