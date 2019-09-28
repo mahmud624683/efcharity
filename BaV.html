@@ -9,7 +9,64 @@
     <link rel="stylesheet" href="css/headerFooter.css">
     <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Geostar+Fill&display=swap" rel="stylesheet">
+    <style type="text/css">
+        
+           #feedBack fieldset{
+                
+                
+            }
+            #feedBack input{
+              margin-bottom: 20px;
+              color: black;
+            }
+            #feedBack textarea{
+              height: 50px;
+              margin-bottom: 20px;
+              color: black;
+            }
+            .modal {
+			  display: none; /* Hidden by default */
+			  position: fixed; /* Stay in place */
+			  z-index: 1; /* Sit on top */
+			  padding-top: 100px; /* Location of the box */
+			  left: 0;
+			  top: 0;
+			  width: 100%; /* Full width */
+			  height: 100%; /* Full height */
+			  overflow: auto; /* Enable scroll if needed */
+			  background-color: rgb(0,0,0); /* Fallback color */
+			  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+			}
 
+			/* Modal Content */
+			.modal-content {
+			  top: 50%;
+			  left: 0%;
+			  transform: translate(0%,-100%);
+			  background: rgba(255,255,255,.9);
+			  background-color: #fefefe;
+			  margin: auto;
+			  padding: 20px;
+			  border: 1px solid #888;
+			  width: 80%;
+			  color: black;
+			}
+
+			/* The Close Button */
+			.close {
+			  color: #aaaaaa;
+			  float: right;
+			  font-size: 28px;
+			  font-weight: bold;
+			}
+
+			.close:hover,
+			.close:focus {
+			  color: #000;
+			  text-decoration: none;
+			  cursor: pointer;
+			}
+    </style>
   </head>
 <body>
   <header>
@@ -86,7 +143,85 @@
       </div><!-- .collapse .navbar-collapse -->
   </div>
 <!--<BODY></BODY>-->
+<div class="container">
+      <div class="col col-md-10 col-md-offset-1 form-inner" >
+        <div class="col col-md-12">
+          <h3 style="text-align: center;border-bottom-style: solid;border-bottom-color: #ddd;border-bottom-width: 1px; padding-bottom: 5px;">Application Form For Joining As a Volunteer</h3>
+        </div>
+        
+        <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
+            action="">
+          <!-- change the form action to your script url -->
 
+          <div class="form-elements" id="feedBack">
+            <div class="col col-md-6">
+            <input type="text" class="form-control" required="" name="firstName" value="" placeholder="First Name.." aria-required="true">
+            </div>
+            <div class="col col-md-6">
+            <input type="text" class="form-control" required="" name="lastName" value="" placeholder="Last Name.." aria-required="true">
+            </div>
+            <div class="col col-md-12">
+            <textarea type="text" class="form-control" name="message" required="" placeholder="Current Address.." aria-required="true"></textarea>
+            </div>
+            <div class="col col-md-12">
+            <textarea type="text" class="form-control" name="message" required="" placeholder="Permanent Address.." aria-required="true"></textarea>
+            </div>
+            <div  class="col col-md-6">
+            	<select required="" style="background: #bbb; margin-bottom: 20px; height: 35px; text-align: center;" class="col col-md-12" id="professionSelect" onclick="myFunction()">
+            	  <option value="" selected>......</option>
+            	  <option value="student" >Student</option>
+				  <option value="teacher">Teacher</option>
+				  <option value="Other" >Other</option>
+				</select>
+            </div>
+  
+            <div class="col col-md-12" style="display: none;" id="student1">
+            <input type="text" class="form-control" required="" name="student1" value="" placeholder="Institute Name.." aria-required="true" >
+            </div>
+            <div class="col col-md-12" style="display: none;" id="student2">
+            <input type="text" class="form-control" required="" name="student2" value="" placeholder="Class.." aria-required="true">
+            </div>
+             <div class="col col-md-12" style="display: none;" id="other">
+            <input type="text" class="form-control" required="" name="other1" value="" placeholder="Write your profession name.." aria-required="true">
+            </div>
+            <div class="col col-md-6">
+            <input type="Number" pattern="[0-9]" rows="1" cols="1" maxlength="11" class="form-control" required="" name="phnNo" value="" placeholder="Phone Number.." aria-required="true" style="height: 35px;">
+            </div>
+            <div class="col col-md-6">
+            <input type="email" class="form-control" name="email" value="" placeholder="Email Address.." aria-required="true">
+            </div>
+            <div class="col col-md-12">
+            <textarea class="form-control" name="message" required="" placeholder="Why you want to work with Education Foundation?" aria-required="true"></textarea>
+            </div>
+            <div class="col col-md-12">
+           		<input type="checkbox" onclick="checkAddress()" id="checkbox" required="" name="aggriment" value="aggriment" aria-required="false">I have seen all the terms and conditions.I agree with these.<br>
+            </div>
+
+            <div class="col col-md-12">
+             <button style="background: black;">Send</button>
+            </div>
+           
+          </div>
+
+          <!-- Customise the Thankyou Message People See when they submit the form: -->
+          <div class="thankyou_message" style="display:none;">
+            <h2><em>Thanks</em> for your interest!
+              We will contact with you soon!</h2>
+          </div>
+
+        </form>
+      </div> 
+		<div id="myModal" class="modal">
+
+		  <!-- Modal content -->
+		  <div class="modal-content">
+		    <span class="close">&times;</span>
+		    <p>Some text in the Modal..</p>
+		    <button id="myBtn1">Open Modal</button>
+		  </div>
+
+		</div>
+</div>
 <!--<FOOTER></FOOTER>-->
 <footer class="panel-footer">
   <div class="container">
@@ -109,5 +244,6 @@
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/Bav.js"></script>
 </body>
 </html>
