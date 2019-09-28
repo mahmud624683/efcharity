@@ -21,7 +21,17 @@ function myFunction() {
 			document.getElementById("student2").style.display = "none";
 			document.getElementById("other").style.display = "block";
 		}
+		else{
+			document.getElementById("student1").style.display = "none";
+			document.getElementById("student2").style.display = "none";
+			document.getElementById("other").style.display = "none";
+		}
 	}
+	else if(institution===""){
+			document.getElementById("student1").style.display = "none";
+			document.getElementById("student2").style.display = "none";
+			document.getElementById("other").style.display = "none";
+		}
 	previous=institution;
 }
 
