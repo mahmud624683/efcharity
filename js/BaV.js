@@ -10,16 +10,28 @@ function myFunction() {
 			document.getElementById("student1").style.display = "block";
 			document.getElementById("student2").style.display = "block";
 			document.getElementById("other").style.display = "none";
+			document.getElementById("student1").setAttribute("required", "required");
+			document.getElementById("student2").setAttribute("required", "required");
+			document.getElementById("other").removeAttribute("required");
+			document.getElementById("Profession").value = "student";
 		}
 		else if (institution==="teacher") {
 			document.getElementById("student1").style.display = "block";
 			document.getElementById("student2").style.display = "none";
 			document.getElementById("other").style.display = "none";
+			document.getElementById("student1").setAttribute("required", "required");
+			document.getElementById("student2").removeAttribute("required");
+			document.getElementById("other").removeAttribute("required");
+			document.getElementById("Profession").value = "teacher";
 		}
 		else if (institution==="Other") {
 			document.getElementById("student1").style.display = "none";
 			document.getElementById("student2").style.display = "none";
 			document.getElementById("other").style.display = "block";
+			document.getElementById("student1").removeAttribute("required");
+			document.getElementById("student2").removeAttribute("required");
+			document.getElementById("other").removeAttribute("required", "required");
+			document.getElementById("Profession").value = "other";
 		}
 		else{
 			document.getElementById("student1").style.display = "none";
@@ -36,6 +48,7 @@ function myFunction() {
 }
 
 
+
 var modal = document.getElementById("myModal");
 
 // Get the <span> element that closes the modal
@@ -44,7 +57,10 @@ var span = document.getElementsByClassName("close")[0];
 function checkAddress()
 {	var status=document.getElementById("checkbox").checked;
 	if (status) {
-		 modal.style.display = "block";
+		 //modal.style.display = "block";
+		var phn=document.getElementById("phnNo").value;
+		document.getElementById("phnNo").value="'"+phn;
+		 
 	}
 	console.log(status);
 }

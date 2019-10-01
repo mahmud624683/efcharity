@@ -110,6 +110,7 @@ body {
 @media (min-width: 1200px) {
   #donation{
     transform: translate(-50%,130%);
+    display: none;
   }
   #collapsable-nav
   {
@@ -143,6 +144,7 @@ body {
 @media (min-width: 992px) and (max-width: 1199px) {
   #donation{
     transform: translate(25%,130%);
+    display: none;
   }
   #collapsable-nav a { /* Collapsed nav menu text */
     font-size: 1em;
@@ -177,6 +179,7 @@ body {
 @media (min-width: 768px) and (max-width: 991px) {
   #donation{
     transform: translate(0%,75%);
+    display: none;
   }
   #collapsable-nav a { /* Collapsed nav menu text*/ 
      font-size: 1.2vw;

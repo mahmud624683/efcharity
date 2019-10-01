@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Education Foundation</title>
@@ -181,7 +181,7 @@
         </div>
         
         <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
-            action="">
+            action="https://script.google.com/macros/s/AKfycby4YYjjR8_3dPvx_uVx4Il6Lk0VtM1oJA_kblQi/exec">
           <!-- change the form action to your script url -->
 
           <div class="form-elements" id="feedBack">
@@ -192,31 +192,34 @@
             <input type="text" class="form-control" required="" name="lastName" value="" placeholder="Last Name.." aria-required="true">
             </div>
             <div class="col col-md-12">
-            <textarea type="text" class="form-control" name="message" required="" placeholder="Current Address.." aria-required="true"></textarea>
+            <textarea type="text" class="form-control" name="Current Address" required="" placeholder="Current Address.." aria-required="true"></textarea>
             </div>
             <div class="col col-md-12">
-            <textarea type="text" class="form-control" name="message" required="" placeholder="Permanent Address.." aria-required="true"></textarea>
+            <textarea type="text" class="form-control" name="Permanent Address" required="" placeholder="Permanent Address.." aria-required="true"></textarea>
             </div>
-            <div  class="col col-md-6">
-            	<select required="" style="background: #bbb; margin-bottom: 20px; height: 35px; text-align: center;" class="col col-md-12" id="professionSelect" onclick="myFunction()">
-            	  <option value="" selected>......</option>
+            <div class="col col-md-12" style="display: none;" >
+                <input type="text" class="form-control" name="Profession" id="Profession" value="">
+            </div>
+            <div  class="col col-md-12">
+            	<select required="" style="background: #bbb; margin-bottom: 20px; height: 35px; text-align: center;" class="col col-md-6" id="professionSelect" onclick="myFunction()">
+            	  <option value="" selected>Profession</option>
             	  <option value="student" >Student</option>
-				  <option value="teacher">Teacher</option>
-				  <option value="Other" >Other</option>
-				</select>
+      				  <option value="teacher">Teacher</option>
+      				  <option value="Other" >Other</option>
+      				</select>
             </div>
   
-            <div class="col col-md-12" style="display: none;" id="student1">
-            <input type="text" class="form-control" required="" name="student1" value="" placeholder="Institute Name.." aria-required="true" >
+            <div class="col col-md-12" >
+            <input type="text" class="form-control" name="Institute Name" value="" placeholder="Institute Name.." aria-required="true" style="display: none;" id="student1">
             </div>
-            <div class="col col-md-12" style="display: none;" id="student2">
-            <input type="text" class="form-control" required="" name="student2" value="" placeholder="Class.." aria-required="true">
+            <div class="col col-md-12" >
+            <input type="text" class="form-control" name="Class" value="" placeholder="Class.." aria-required="true" style="display: none;" id="student2">
             </div>
-             <div class="col col-md-12" style="display: none;" id="other">
-            <input type="text" class="form-control" required="" name="other1" value="" placeholder="Write your profession name.." aria-required="true">
+             <div class="col col-md-12" >
+            <input type="text" class="form-control" name="Profession Details" value="" placeholder="Write your profession details.." aria-required="true" style="display: none;" id="other">
             </div>
             <div class="col col-md-6">
-            <input type="Number" pattern="[0-9]" rows="1" cols="1" maxlength="11" class="form-control" required="" name="phnNo" value="" placeholder="Phone Number.." aria-required="true" style="height: 35px;">
+            <textarea type="text" id="phnNo"  maxlength="11" class="form-control" required="" name="phone Number" value="" placeholder="Phone Number.." aria-required="true" style="height: 35px;"></textarea>
             </div>
             <div class="col col-md-6">
             <input type="email" class="form-control" name="email" value="" placeholder="Email Address.." aria-required="true">
@@ -236,7 +239,7 @@
             </div>-->
 
             <div class="col col-md-12">
-           		<input type="checkbox" onclick="checkAddress()" id="checkbox" required="" name="aggriment" value="aggriment" aria-required="false">I have seen all the terms and conditions.I agree with these.<br>
+           		<input type="checkbox" onclick="checkAddress()" id="checkbox" required="" name="aggriment" value="aggree" aria-required="false">I have seen all the terms and conditions.I agree with these.<br>
             </div>
            
             <div class="col col-md-12">
@@ -246,7 +249,7 @@
           </div>
 
           <!-- Customise the Thankyou Message People See when they submit the form: -->
-          <div class="thankyou_message" style="display:none;">
+          <div class="thankyou_message" style="display:none; text-align: center;">
             <h2><em>Thanks</em> for your interest!
               We will contact with you soon!</h2>
           </div>
@@ -287,5 +290,6 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
   <script src="js/Bav.js"></script>
+  <script src="js/form-submission-handler.js"></script>
 </body>
 </html>
