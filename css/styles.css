@@ -45,7 +45,7 @@
 /* Caption text */
 .text {
   color: #FFFFFF;
-  font-family: 'Geostar Fill', cursive;
+  font-family: Times, "Times New Roman", serif;
   background: #717171;
   font-size: 1.5vw;
   font-weight: bolder;
@@ -108,7 +108,7 @@
 #notice {
   background-color: white;
   color: #000000;
-  font-family: 'Geostar Fill', cursive;
+  font-family: Times, "Times New Roman", serif;
   text-align: center;
   padding: 10px;
   border: 5px solid black;
