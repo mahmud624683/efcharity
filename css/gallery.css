@@ -49,6 +49,18 @@
   bottom: 0;
 }
 
+#backOnTop {
+position: fixed;
+top: 50%;
+left: 0%;
+z-index: 1000;
+opacity: 0.5;
+}
+
+#backOnTop:hover {
+opacity: 1;
+}
+
 
 /* The overlay effect - lays on top of the container and over the image */
 .text {
@@ -71,28 +83,44 @@
 }
 @media (min-width: 768px)
 {
-	.album{
+	/*.album{
 	  padding: 10px;
 	  border: 5px solid black;
 	  height: 900px;
 	  margin-top: 20px;
 	  overflow: auto;
+}*/
+#backOnTop {
+position: fixed;
+top: 82.5%;
+left: 0%;
+transform: translate(-35%,0%);
+z-index: 1000;
+opacity: 0.5;
 }
 }
 
 
 @media (max-width: 767px)
 {
-	.album{
+	/*.album{
 	  border: 5px solid black;
 	  height: 400px;
 	  margin-top: 20px;
 	  overflow: auto;
-	}
+	}*/
 	
 	.text{
 		padding: 0px !important;
 		margin-bottom: -40px;
 	}
+  #backOnTop {
+position: fixed;
+top: 90%;
+left: 0%;
+transform: translate(-35%,0%);
+z-index: 1000;
+opacity: 0.5;
+}
 }
 
